@@ -9,6 +9,16 @@
     );
 }
 
+main-title {
+    background: transparent;
+    color: rgba(230, 230, 230, 0.8);
+    font-weight: 100;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 6rem;
+    position: fixed;
+    top: 28%;
+}
+
 h1 {
     color:rgba(225, 225, 225, 0.6);
     font-weight: 100;
@@ -63,14 +73,30 @@ main {
     padding: 5rem;
 }
 
-.top-bar {
+.navbar {
     background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+}
 
+.navbar a {
+    float: right;
+    width: 8rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color: #540b0e;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #9e2a2b;
 }
 
 .center-pane {
     background: linen;
-    /* min-height: 75vh; */
     width: 60%;
     background: linear-gradient(
         to right bottom,
@@ -166,3 +192,5 @@ a.button1 {
 a.button1:hover {
     background-color: #999999;
 }
+
+

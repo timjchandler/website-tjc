@@ -1,6 +1,5 @@
 .project {
     margin: 1rem;
-    background: linear-gradient(60deg, #292929 80%, #f4a261);
     display: flex;
     justify-items: center;
     width: 100%;
@@ -12,7 +11,15 @@
     padding-right: 2rem;
 }
 
-.project:nth-child(2) {
+#thesis.project {
+    background: linear-gradient(60deg, #292929 80%, #e0fbfc);
+}
+
+#tableaux.project {
+    background: linear-gradient(60deg, #292929 80%, #f4a261);
+}
+
+#sentencing.project {
     background: linear-gradient(60deg, #292929 80%, #2a9d8f);
 }
 

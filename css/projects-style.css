@@ -38,6 +38,10 @@
     border-radius: 5px;
 }
 
+.details a:hover {
+    background: cornsilk;
+}
+
 .details p {
     padding-bottom: 2rem;
 }
@@ -48,8 +52,4 @@
     width: 85%;
     background: transparent;
     flex-direction: column;
-}
-
-.details a:hover {
-    background: cornsilk;
 }

@@ -11,8 +11,7 @@
 
 main-title {
     background: transparent;
-    /* color: rgba(230, 230, 230, 0.8); */
-    color: black;
+    color: rgba(230, 230, 230, 0.8);
     font-weight: 100;
     font-family: 'Quicksand', sans-serif;
     font-size: 6rem;

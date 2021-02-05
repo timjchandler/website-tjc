@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(
+        300deg, 
+        #353535 85%, 
+        #f4a261 99%
+    );
+}
+
+h3 {
+    color: #dddddd;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    background: transparent;
+    width: 100%;
+}
+
+.navbar {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 50rem;
+    padding: 2rem;
+}
+
+.navbar a {
+    background: transparent;
+    float: right;
+    width: 8rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color: #9e2a2b;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #f4a261;
+    text-shadow: 0 0 3px #f4a261;
+}
+
+main {
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.island {
+    /* background: linen; */
+    background-image: url(/../images/transparent-island-tree-cropped.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    height: 50%;
+    width: 15%;
+}
+
+.pannel {
+    background: linen;
+    width: 70%;
+    min-width: 50rem;
+    /* min-height: 90rem; */
+    background: linear-gradient(
+        to right bottom,
+        rgba(225, 225, 225, 0.6),
+        rgba(240, 240, 240, 0.2)
+    );
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+

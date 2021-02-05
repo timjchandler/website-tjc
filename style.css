@@ -19,6 +19,12 @@ main-title {
     top: 28%;
 }
 
+main-title:hover {
+    color: rgba(230, 230, 230, 0.1);
+    text-shadow: 0 0 2rem rgb(230, 230, 230); 
+
+}
+
 h1 {
     color:rgba(225, 225, 225, 0.6);
     font-weight: 100;
@@ -78,6 +84,7 @@ main {
     position: fixed;
     top: 0;
     width: 100%;
+    min-width: 50rem;
     padding: 2rem;
 }
 
@@ -93,11 +100,13 @@ main {
 
 .navbar a:hover {
     color: #9e2a2b;
+    text-shadow: 0 0 3px #9e2a2b;
 }
 
 .center-pane {
     background: linen;
     width: 60%;
+    min-width: 50rem;
     background: linear-gradient(
         to right bottom,
         rgba(225, 225, 225, 0.6),
@@ -109,6 +118,11 @@ main {
     padding: 1rem;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.center-pane h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .rows {
@@ -133,6 +147,61 @@ main {
     background: transparent;
 }
 
+.project {
+    margin: 1rem;
+    background: linear-gradient(60deg, #292929 80%, #f4a261);
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.project p {
+    padding-right: 2rem;
+}
+
+.project:nth-child(3) {
+    background: linear-gradient(60deg, #292929 80%, #2a9d8f);
+}
+
+.project img {
+    background: transparent;
+    align-content: top;
+    justify-content: right;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    max-height: 12rem;
+}
+
+.details a {
+    color: #353535;
+    width: 10rem;
+    height: 3rem;
+    background: #999999; 
+    text-align: center;
+    padding: 12px 10px 15px 12px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.details p {
+    padding-bottom: 2rem;
+}
+
+.details {
+    display: flex;
+    justify-items: center;
+    width: 85%;
+    background: transparent;
+    flex-direction: column;
+}
+
+.details a:hover {
+    background: cornsilk;
+}
 
 .image-circle {
     margin: auto;
@@ -171,9 +240,9 @@ main {
     flex-direction: column;
 }
 
-.info-box:first-child {
+/* .info-box:first-child {
 
-}
+} */
 
 a.button1 {
     margin-bottom: auto;
@@ -193,4 +262,22 @@ a.button1:hover {
     background-color: #999999;
 }
 
+.footer-bar {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.footeritem img {
+    background: transparent;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    max-height: 2rem; 
+    margin: 1rem;
+}

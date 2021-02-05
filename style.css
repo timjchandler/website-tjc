@@ -126,7 +126,7 @@ main {
         #f9c74f,
         #f8961e
     );
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -135,6 +135,5 @@ main {
         #f8961e,
         #f9c74f
     );
-    border-radius: 3px;
 }
 

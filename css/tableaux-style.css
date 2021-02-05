@@ -67,7 +67,6 @@ main {
     background: linen;
     width: 70%;
     min-width: 50rem;
-    /* min-height: 90rem; */
     background: linear-gradient(
         to right bottom,
         rgba(225, 225, 225, 0.6),

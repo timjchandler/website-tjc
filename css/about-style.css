@@ -16,6 +16,14 @@
     padding-bottom: 3rem;
 }
 
+.rows:nth-child(3) {
+    background: #353535;
+}
+
+.rows:nth-child(3) {
+    background: #353535;
+}
+
 .title {
     background: transparent;
 }

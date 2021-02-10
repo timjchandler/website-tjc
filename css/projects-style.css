@@ -23,6 +23,10 @@
     background: linear-gradient(60deg, #292929 80%, #2a9d8f);
 }
 
+#mini-projects.project {
+    background: linear-gradient(60deg, #292929 80%, #90be6d);
+}
+
 .project img {
     background: transparent;
     align-content: top;

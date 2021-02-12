@@ -74,6 +74,18 @@ p1 {
     color: #cccccc;
 }
 
+.output {
+    background: transparent;
+}
+
+#bottom-out {
+    font-family: 'Quicksand', sans-serif;
+    background: transparent;
+    position: fixed;
+    bottom: 2%;
+    left: 55%;
+}
+
 .center-plot {
     background: transparent;
     min-width: 65%;

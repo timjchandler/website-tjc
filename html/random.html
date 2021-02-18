@@ -20,7 +20,7 @@
             <div class="random-pane">
                <div class="left-sub-pane">
                     <h3>Randomisation:</h3>
-                    <p>Whilst each individual dice roll has an equal chance of occuring, when multiple are rolled there are some sums more likely to occur than others. Over multiple iterations the results will form a curve.<br><br>Here we will simulate the rolling of three dice, multiple times. With the number of occurrences of the total rolled shown in the plot to the left. Over time a smoother curve will emerge.<br><br>Click the button below to begin</p>
+                    <p>Whilst each individual dice roll has an equal chance of occuring, when multiple are rolled there are some sums more likely to occur than others. Over multiple iterations the results will form a curve.<br><br>Here we will simulate the rolling of three dice, multiple times. With the number of occurrences of the total rolled shown in the plot to the right. Over time a smoother curve will emerge.<br><br>Click the button below to begin</p>
                     <p1 id="roll1"></p1>
                     <p1 id="roll2"></p1>
                     <p1 id="roll3"></p1>
@@ -44,68 +44,10 @@
                    <bar id="bar16">16</bar>
                    <bar id="bar17">17</bar>
                    <bar id="bar18">18</bar>
-                   <!-- <button id="bar-button" type="bar-btn" onclick="loopXTimesRecSetup(5000)">Roll 3 dice 5000 times</button> -->
                    <output id="bottom-out"></output>
                </div> 
             </div>
         </main>
-        <script>
-            // function begin() {
-            //     value = Math.random();
-            //     value = Math.ceil(value * 6);
-            //     total = value;
-            //     document.getElementById("roll1").innerHTML = "The first dice roll is: " + value + "<br><br>"; 
-        
-            //     value = Math.random();
-            //     value = Math.ceil(value * 6);
-            //     total += value;
-            //     document.getElementById("roll2").innerHTML = "The first dice roll is: " + value + "<br><br>"; 
-                
-            //     value = Math.random();
-            //     value = Math.ceil(value * 6);
-            //     total += value;
-            //     document.getElementById("roll3").innerHTML = "The first dice roll is: " + value + "<br><br>"; 
-        
-            //     document.getElementById("total").innerHTML = "The total roll is: " + total; 
-            // }
-            
-            var isRunning = false;
-
-            function loopXTimesRecSetup(iterations) {
-                if (isRunning == false) {
-                    isRunning = true;
-                    counts = new Array(16).fill(0);
-                    loopRec(iterations, counts, iterations);
-                }
-            }
-
-            function loopRec(iterations, array, initial) {
-                document.getElementById("bottom-out").innerHTML = (initial - iterations) + " sets of 3 dice rolled."; 
-                if (iterations < 1) {
-                    isRunning = false;
-                    return;
-                }
-                total = 0;
-                for (idx = 0; idx < 3; idx++) {
-                    value = Math.random();
-                    value = Math.ceil(value * 6);
-                    total += value;
-                }
-                counts[total - 3] = counts[total - 3] + 1;
-                colWeight = 25 / Math.max(...array);
-                for (j = 0; j < 16; j++) {
-                        name = "bar" + (j + 3);
-                        height = (counts[j] * colWeight) + "rem"
-                        document.getElementById(name).style.minHeight = height;
-                }
-                skip = Math.ceil((initial - iterations + 1) / 250);
-                if (iterations % skip == 0) {
-                    setTimeout(() => { loopRec(iterations - 1, array, initial); }, 10);
-                }
-                else {
-                    loopRec(iterations - 1, array, initial); 
-                }
-            }
-        </script>
+        <script src="../javascript/random.js"></script>
     </body>
 </html>

@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(
+        300deg, 
+        #353535 85%, 
+        #f4a261 99%
+    );
+}
+
+h3 {
+    color: #dddddd;
+    font-weight: 100;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20pt;
+    background: transparent;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 50rem;
+    padding: 2rem;
+}
+
+.navbar a {
+    background: transparent;
+    float: right;
+    width: 8rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color: #fb8b24;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #f4a261;
+    text-shadow: 0 0 3px #f4a261;
+}
+
+main {
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.island {
+    background-image: url(/../images/windmills.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 50%;
+    width: 40%;
+}
+
+.pannel {
+    background: linen;
+    width: 70%;
+    min-width: 50rem;
+    background: linear-gradient(
+        to right bottom,
+        rgba(225, 225, 225, 0.6),
+        rgba(240, 240, 240, 0.2)
+    );
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+#color-change {
+    background: transparent;
+    max-height: 30rem;
+    min-height: 30rem;
+    min-width: 30rem;
+    max-width: 30rem;
+    border-radius: 15rem;
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    /* border-style: solid; */
+    /* border-width: 3rem; */
+    /* border-color: rgba(25, 225, 225, 1); */
+}

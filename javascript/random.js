@@ -23,9 +23,9 @@ function loopRec(iterations, array, initial) {
     counts[total - 3] = counts[total - 3] + 1;
     colWeight = 25 / Math.max(...array);
     for (j = 0; j < 16; j++) {
-            name = "bar" + (j + 3);
+            nameID = "bar" + (j + 3);
             height = (counts[j] * colWeight) + "rem"
-            document.getElementById(name).style.minHeight = height;
+            document.getElementById(nameID).style.minHeight = height;
     }
     skip = Math.ceil((initial - iterations + 1) / 250);
     if (iterations % skip == 0) {

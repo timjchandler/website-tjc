@@ -27,14 +27,8 @@ function getRGB(ticks) {
     outStr1 = 'rgba(' + out1[0] + ',' + out1[1] + ',' + out1[2] + ',1),';
     outStr2 = 'rgba(' + out2[0] + ',' + out2[1] + ',' + out2[2] + ',1)';
     fullOut = "linear-gradient(to top right," + outStr1 + outStr2 + ");";
-    // document.getElementById("color-change").style.color = green;
-    // document.getElementById("color-change").innerHTML = outStr;
-    // console.log(element);
     el = document.getElementById(elementName);
-    el.setAttribute("style", "background: " + fullOut);// +
-                            //  "border-color: " + outStr2 + ";");
-    // el.setAttribute("style", "border-color: " + outStr2 + ";");
-    // console.log("border-color: (" + outStr2);
+    el.setAttribute("style", "background: " + fullOut);
     setTimeout(() => { getRGB(ticks + 1); }, 40);
 }
 
